@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Warp&display=swap');
+*{font-family: 'Roboto', sans-serif;
+    font-family: 'Tilt Warp', cursive;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: rgb(33, 14, 136);
+    justify-content: space-between;
+}
+h6{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: white;
+    text-decoration: none;      
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
