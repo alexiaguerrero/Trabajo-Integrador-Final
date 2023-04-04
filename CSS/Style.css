@@ -23,7 +23,7 @@
 header{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(41, 40, 104);
     font-size: 20px;
     padding: 2px 5px;
@@ -37,6 +37,7 @@ header{
     display: flex;
     justify-content: end;
     gap: 20px;
+    padding: 5px;
 }
 a{
     color: white;
@@ -48,12 +49,11 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1400vw;
     background-color: #f5f5f5; 
 }
 main img{
     width: 100vw; /* la imagen se ajustará al ancho del contenedor */
-    height: 50vh; /* establece la altura máxima de la imagen */
+   
     object-fit: cover; /* la imagen se recortará para llenar el contenedor */
     overflow: hidden; /* oculta cualquier parte de la imagen que se extienda más allá de los límites del contenedor */
 }
@@ -63,7 +63,7 @@ button{
     background-color: rgb(41, 40, 104);
     color: rgb(230, 228, 228);
     border: none;
-    width: 220px;
+    width: 180px;
     height: 200px;
     font-size: 30px;
     border-radius: 30px;
@@ -74,19 +74,28 @@ button{
 p{
     margin: 60px 70px;
     font-size: 25px;
+    justify-content: center;
+}
+.icon-button i {
+    display: flex;
+    padding: 80px;
+    align-items: center;
+    
 }
 /* ------------------------------------------------Footer------------------------------------ */
 footer{
-    background-color: rgb(160, 157, 157);
+    background-color: rgba(170, 168, 168, 0.753);
     color:  rgb(26, 25, 25);;
     padding: 30px; /* agrega un relleno interno de 30 píxeles */
-    background-color: #f5f5f5; /* establece un fondo gris claro */
 }
 .descripcion{
+    display: flex;
     border: 2px solid #ccc; /* agrega un borde de 2 píxel y color gris claro */
-    padding: 20px; /* agrega un relleno interno de 20 píxeles */
-    background-color: #f5f5f5; /* establece un fondo gris claro */
+    padding: 20px 50px; /* agrega un relleno interno de 20 píxeles */
+    background-color: #e6e6e6; /* establece un fondo gris claro */
     border: none; 
+    align-content: center;
+    
 }
 
 /* .icon-button {
@@ -99,7 +108,5 @@ footer{
     border-radius: 5px;
     cursor: pointer;
 }
-.icon-button i {
-    margin-right: 5px;
-} */
+ */
 
