@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Warp&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;font-family: 'Tilt Warp', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 40, 104);
+    font-size: 20px;
+}
+/* --------------------------------------main----------------------------------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-for{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    background-color: #dad8d8;
+    margin: 50px 50px;
+    padding: 15px 15px; 
+}
+
+/* .caja{
+    width: 200px;
+    height: 200px;
+    background-color: darkgreen;
+    border: 5px rgb(239, 234, 111) solid;
+    border-top: 5px black dashed;
+    border-radius: 5px;
+    border-top-right-radius: 70px;
+    margin: 50px 30px;
+    padding: 10px 15px;
+    animation-name: left-to-right;
+    animation-duration: 4s;
+}
+.caja:hover{
+    transition:ease-in-out 4s ;
+    background-color: blue;
+    /* transform: rotate(330deg); 
+    transform: translateX(300px);
+    rotate: 360deg; */

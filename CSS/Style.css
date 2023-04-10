@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-/* -----------------------------------buscador header-------------------------- */
+/* -----------------------------------buscador header------------------------------------------ */
 .search-box input[type="submit"] {
     background-color: #959795;
     color: white;
@@ -40,10 +40,14 @@ header{
     padding: 5px;
 }
 a{
-    color: white;
+    color: rgb(231, 227, 227);
     text-decoration: none;
 }
-/* ------------------------------------------Main------------------------------------------------------  */
+a:hover{
+    color: rgb(151, 147, 147);
+}
+
+/* ------------------------------------------Main----------------------------------------------------  */
 main{
     display: flex;
     flex-direction: column;
@@ -53,60 +57,114 @@ main{
 }
 main img{
     width: 100vw; /* la imagen se ajustará al ancho del contenedor */
-   
     object-fit: cover; /* la imagen se recortará para llenar el contenedor */
     overflow: hidden; /* oculta cualquier parte de la imagen que se extienda más allá de los límites del contenedor */
 }
 button{
-    display: flex;
-    display: inline-block;
+    display: flex; /* convierte el elemento en un contenedor de flexbox */
+    flex-direction: column; 
+    align-items: center; /* alinea verticalmente el contenido en el centro */
+    justify-content: center; /* alinea horizontalmente el contenido en el centro */
     background-color: rgb(41, 40, 104);
     color: rgb(230, 228, 228);
     border: none;
-    width: 180px;
-    height: 200px;
-    font-size: 30px;
+    width: 180px; /* establece el ancho del botón */
+    height: 200px; /* establece la altura del botón */
     border-radius: 30px;
     cursor: pointer;
     margin: 20px;
-    box-shadow: 0px 5px 6px rgba(17, 17, 17, 0.439);
-} 
-p{
-    margin: 60px 70px;
-    font-size: 25px;
-    justify-content: center;
-}
-.icon-button i {
-    display: flex;
-    padding: 80px;
-    align-items: center;
+    font-size: 30px;
+    box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.439);
     
 }
-/* ------------------------------------------------Footer------------------------------------ */
-footer{
-    background-color: rgba(170, 168, 168, 0.753);
-    color:  rgb(26, 25, 25);;
-    padding: 30px; /* agrega un relleno interno de 30 píxeles */
+button:hover{
+    transition: background-color 0.2s ease-in-out; /*agregamos la transición de color*/
+    background-color: rgb(56, 55, 141); /*cambiamos el color de fondo al colocar el cursor encima*/
+    transform: scale(1.2); /* aumenta el tamaño del botón al 120% */
+    transition: transform 0.3s ease-in-out; /* agrega una transición suave */
 }
-.descripcion{
+.botton-main{
     display: flex;
-    border: 2px solid #ccc; /* agrega un borde de 2 píxel y color gris claro */
+    padding: 80px;
+    align-items: center
+}
+.botton-main i{
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{  
+    margin: 60px 70px;
+    font-size: 23px;
+    
+}
+.descripcion{ 
     padding: 20px 50px; /* agrega un relleno interno de 20 píxeles */
     background-color: #e6e6e6; /* establece un fondo gris claro */
     border: none; 
-    align-content: center;
-    
+}
+/* ------------------------------------------------Footer------------------------------------ */
+footer {
+    background-color: rgba(184, 177, 177, 0.952);
+    color: rgb(233, 233, 233);
+    padding: 60px;
+}
+.fo-barra{
+    display: flex;
+    justify-content: space-between; /* elimina el "align-items" y agrega "space-between" */
+    align-items: center;
+    flex-wrap: wrap;
+    }
+.col-fo{
+    flex-basis: 30%; /* asigna un ancho base del 30% */
+    transition: 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.titulo-sup{
+    margin: 0;
+    cursor: pointer;
+    align-items: center;
+    text-align: left; /* alinea el texto a la izquierda */
 }
 
-/* .icon-button {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 5px;
+ul{
+    margin: 8px;
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+}
+ul li{
+    margin: 10px 0px;
+}
+.qr{
+    text-align: center;
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+}
+.Redessociales{
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-end;
     cursor: pointer;
 }
- */
-
+    
+.Redessociales h4{
+    margin-right: 10px; /* agregamos un margen derecho para separar el título de la lista */
+   align-items: center; /* centramos verticalmente el título */
+}
+.img-fo {
+    flex-basis: 100%; /* ocupa el ancho completo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.img-fo img {
+    width: 50%;
+}
+.img-fo p {
+    margin-top: 10px;
+}
