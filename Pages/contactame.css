@@ -30,22 +30,23 @@ main{
     padding: 15px 15px; 
 }
 
-/* .caja{
-    width: 200px;
-    height: 200px;
-    background-color: darkgreen;
-    border: 5px rgb(239, 234, 111) solid;
-    border-top: 5px black dashed;
-    border-radius: 5px;
-    border-top-right-radius: 70px;
-    margin: 50px 30px;
-    padding: 10px 15px;
-    animation-name: left-to-right;
-    animation-duration: 4s;
+/* ------------------------footer------------------------------------------------ */
+footer {
+    background-color: rgba(184, 177, 177, 0.952);
+    color: rgb(233, 233, 233);
+    padding: 60px;
 }
-.caja:hover{
-    transition:ease-in-out 4s ;
-    background-color: blue;
-    /* transform: rotate(330deg); 
-    transform: translateX(300px);
-    rotate: 360deg; */
+.img-fo {
+    flex-basis: 100%; /* ocupa el ancho completo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.img-fo img {
+    width: 50%;
+}
+.img-fo p {
+    margin-top: 10px;
+}
