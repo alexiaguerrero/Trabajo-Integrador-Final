@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Warp&display=swap');
-
 *{
-    font-family: 'Roboto', sans-serif;font-family: 'Tilt Warp', cursive;
+    font-family: 'Roboto', sans-serif; font-family: 'Tilt Warp', cursive;
     margin: 0;
     padding: 0;
 }
@@ -17,20 +16,32 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgb(31, 31, 31);
 }
 .box-for{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 400px;
+    width: 100vh;
+    height: 80vh;
     background-color: #dad8d8;
-    margin: 50px 50px;
-    padding: 15px 15px; 
+    margin: 30px 30px;
+    padding: 15px 15px;
+    border-radius: 20px; 
 }
-
-/* ------------------------footer------------------------------------------------ */
+input[type="submit"]{
+    display: block; /* convierte el botón en un elemento de bloque */
+    margin: 0 auto; /* centra el botón horizontalmente */
+    background-color: #8d8d8d;
+    color: rgb(233, 233, 233); /* cambia el color del texto a blanco */
+    border: none; /* elimina el borde del botón */
+    padding: 10px 30px; /* ajusta el relleno del botón según sea necesario */
+    cursor: pointer; /* cambia el cursor del mouse a una mano para indicar que el botón es interactivo */
+    border-radius: 10px;
+  }
+  
+/* -------------------------------------------footer------------------------------------------------ */
 footer {
     background-color: rgba(184, 177, 177, 0.952);
     color: rgb(233, 233, 233);
@@ -49,4 +60,15 @@ footer {
 }
 .img-fo p {
     margin-top: 10px;
+}
+a{  
+    color: rgb(41, 40, 104);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+a:hover{
+    transition: 0.2s ease-in-out;
+    color: rgb(17, 17, 17)
 }
