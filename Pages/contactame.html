@@ -11,30 +11,37 @@
     <header>
         <img src="../Img/Logo-removebg-preview.png" alt="Seguros ArgPro" width="150px">
     </header>
-    <br><br>
     <main>
-        
-        <br>
-        <br>
-        <h2>Dejanos tu consulta</h2>
-        <div class="box-for">
-            <ul><form>
-                <ul><label for="Nombre">Escriba su nombre:</label>
-                    <input type="text" id="Nombre" placeholder= "Juanito"></ul><br>
-                <ul><label for="Apellido">Apellido:</label>
-                    <input type="text" id="Apellido" placeholder= "Perez"></ul><br>
-                <ul><label for="number">Número de celular:</label>
-                    <input type="tel" id="number" placeholder="  Sin 0 ni 15 "></ul><br>
-                <ul><label for="email">Email:</label>
-                    <input type="email"id="email" placeholder= "usuario@gmail.com"></ul><br>
-                <ul><label for="consulta">Dejanos tu consulta:</label><br>
-                    <textarea name="consulta" id="consulta" cols="40" rows="10"></textarea></ul>
-                <input type="submit" value="Enviar"><br>
-            </form></ul><br>
+        <h1>Dejanos tus datos</h1>
+        <h4>Un agente se contactara a la brevedad</h4>
+        <form id="Formulariousuario">
+                <div class="inputContainer">
+                    <label for="nombre">Ingrese su nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ramon Gonzalez" required> 
+                </div>
+                <div class="inputContainer">
+                    <label for="email">Ingrese su Email:</label>
+                    <input type="email" id="email" name="email" placeholder="correro@gmail.com" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="numero">Numero de Telefono:</label>
+                    <input type="number" id="numero" name="numero" placeholder="sin 0 ni 15" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="provincia">Seleccione su provincia</label>
+                    <select name="provincia" id="provincia">
+                        <option value="Entre Rios">Entre Rios</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                    </select>
+                </div>
+                <input type="submit" value="Registrar" class="btn-registrar"/>
+            </form>
+            <div class="contenedorusuario"></div>
             <nav class="volver">
                 <a href="../index.html">Volver a la pagina inicio</a>
-            </nav>
-        </div>    
+            </nav> 
     </main>
     <footer>
         <div class="img-fo">
@@ -42,5 +49,6 @@
             <p>2023 ArgPro &copy;. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../Script.js"></script>
 </body>
 </html>
