@@ -5,10 +5,11 @@
 }
 /* -----------------------------------buscador header------------------------------------------ */
 .search-box input[type="submit"] {
-    background-color: #8d8d8d;
-    color: white;
+    background-color: #a5a4a4;
+    color: rgb(240, 240, 240);
     border: none;
-    padding: 8px;
+    padding: 9px;
+    font-size: 14px;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -38,13 +39,14 @@ header{
     justify-content: end;
     gap: 20px;
     padding: 5px;
-    margin-top: -35px;
+    margin-top: -40px;
 }
 a{
     color: rgb(231, 227, 227);
     text-decoration: none;
 }
 a:hover{
+    transition: 0.2 ease-in-out;
     color: rgb(151, 147, 147);
 }
 .btn-menu{
@@ -54,14 +56,6 @@ a:hover{
     height: 40px;
     font-size: 25px;
     display: none;
-}
-@media screen and (max-width: 800px){
-    .links{
-        display: none;
-    }
-    .btn-menu{
-        display: block;
-    }
 }
 
 /* ------------------------------------------Main----------------------------------------------------  */
@@ -162,9 +156,9 @@ ul li{
     margin: 10px 0px;
 }
 .qr{
+    display: flex;
     text-align: center;
     flex-basis: 25%;
-    display: flex;
     align-items: center;
 }
 .Redessociales{

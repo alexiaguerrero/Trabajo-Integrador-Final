@@ -47,6 +47,7 @@ main form .inputContainer input,select{
     border:solid rgb(33, 33, 33) 1px;
     width: 180px;
     font-size: 18px;
+    margin-bottom: -100px;
 }
 .btn-registrar:hover{
     transition: 0.2s ease-in-out;
@@ -101,5 +102,5 @@ a{
 }
 a:hover{
     transition: 0.2s ease-in-out;
-    color: rgb(17, 17, 17)
+    color: rgb(94, 94, 94)
 }
