@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Trabajo Practico Integrador</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
     <header>
@@ -24,9 +24,12 @@
         </nav>
     </header>
     <main>
-        <img src="./Img/shutterstock_193994486.jpg" alt="Imagen no disponible" width="50%">
+        <div id="slider-main">
+            <div class="slider-image"><img src="./Img/shutterstock_193994486.jpg" alt="Imagen no disponible" width="50%"></div>
+            <div class="slider-image"><img src="./Img/bicifamilia.jpeg" width="50%"></div>
+            <div class="slider-image"><img src="./Img/car.jpeg" width="50%"></div>
+        </div>
         <h1>Nuestros Productos</h1>
-        <br>
         <h3>CON ARGPRO estas SEGURO</h3>
         <div class="botton-main">
             <button>
@@ -37,13 +40,13 @@
             </button>
             <button>
                 AUTO<i class="bi bi-car-front"></i>
-           </button>
+            </button>
             <button>
                 VIDA<i class="bi bi-life-preserver"></i>
             </button>
             <button>
                 AHORROS<i class="bi bi-safe"></i>
-           </button>
+            </button>
         </div>
         <div class="descripcion">
             <h2 id="Institucional">QUIENES SOMOS</h2>
@@ -93,5 +96,7 @@
             <p>2023 ArgPro &copy;. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="./script.js"></script>
+    <script>nextSlide();</script>
 </body>
 </html>
